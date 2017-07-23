@@ -1,0 +1,255 @@
+/*
+    NAV.CSS
+
+    - Last updated: 15.05.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+$nav-channel-height: rem-calc(210) !default;
+
+//-----------------------------------------------------------------
+// NAV CHANNELS
+//-----------------------------------------------------------------
+
+.nav-channels {
+	position: relative;
+	padding: rem-calc(25 0); // used to force 40 (45px gap)
+	background: rgba(black, 0.09);
+	z-index: 1;
+
+	@include media-breakpoint-up(lg) {
+	    // height: $nav-channel-height + 2; // what is this?
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 60vh;
+		background: rgba(black, 0.09);
+		z-index: -1;
+	}
+
+	@include media-breakpoint-up(lg) {
+	    height: $nav-channel-height;
+	}
+}
+
+//--------------------------------------------------------------------
+// BUTTON CHANNEL (FALLBACK)
+//--------------------------------------------------------------------
+
+.btn-channel {
+	display: block;
+	line-height: rem-calc(94);
+	font-family: 'Bebas Neue';
+	font-size: rem-calc(34);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: white !important; // why is firefox doing it?
+	text-align: center;
+	transition: transform 300ms ease;
+
+	&:hover {
+		transform: scale(0.95);
+
+		@include media-breakpoint-up(md) {
+		    transform: scale(1.11);
+		}
+	}
+}
+
+//--------------------------------------------------------------------
+// NAV CHANNEL BUTTONS
+//--------------------------------------------------------------------
+
+.atvImg-container.over .atvImg-shadow {
+    opacity: 0.6;
+    transform: scale(1);
+}
+
+.atvImg-shadow {
+    box-shadow: 0 8px 30px rgba(black,0.4);
+}
+//=========================================
+// MOVIE NIGHT
+//=========================================
+
+.btn-movie-night {
+
+	// MOBILE FALLBACK - img removed by JS
+	img {
+		@include media-breakpoint-down(sm) {
+		    background-color: $brand-quaternary;
+		    border-bottom: 4px solid darken($brand-quaternary, 15%);
+		}
+	}
+
+	.atvImg-layers .atvImg-rendered-layer.is-bg {
+	    background-color: $brand-secondary-tmh;
+	}
+
+	.atvImg-layers {
+	    border-bottom: 4px solid darken($brand-secondary-tmh, 15%);
+	}
+}
+//=========================================
+// JOURNEY INTO CHILDHOOD
+//=========================================
+
+.btn-journey-into-childhood {
+
+	// MOBILE FALLBACK - img removed by JS
+	img {
+		@include media-breakpoint-down(sm) {
+		    background-color: $brand-tertiary-tmh;
+		    border-bottom: 4px solid darken($brand-tertiary-tmh, 15%);
+		}
+	}
+
+	.atvImg-layers .atvImg-rendered-layer.is-bg {
+	    background-color: $brand-tertiary-tmh;
+	}
+
+	.atvImg-layers {
+	    border-bottom: 4px solid darken($brand-tertiary-tmh, 15%);
+	}
+}
+//=========================================
+// MIDNIGHT GAMES
+//=========================================
+
+.btn-midnight-games {
+
+	// MOBILE FALLBACK - img removed by JS
+	img {
+		@include media-breakpoint-down(sm) {
+		    background-color: $brand-quaternary-tmh;
+		    border-bottom: 4px solid darken($brand-quaternary-tmh, 15%);
+		}
+	}
+
+	.atvImg-layers .atvImg-rendered-layer.is-bg {
+	    background-color: $brand-quaternary-tmh;
+	}
+
+	.atvImg-layers {
+	    border-bottom: 4px solid darken($brand-quaternary-tmh, 15%);
+	}
+}
+//=========================================
+// VAULT OF FILLER
+//=========================================
+
+.btn-the-vault-of-filler {
+
+	// MOBILE FALLBACK - img removed by JS
+	img {
+		@include media-breakpoint-down(sm) {
+		    background-color: $brand-quinary-tmh;
+		    border-bottom: 4px solid darken($brand-quinary-tmh, 15%);
+		}
+	}
+
+	.atvImg-layers .atvImg-rendered-layer.is-bg {
+	    background-color: $brand-quinary-tmh;
+	}
+
+	.atvImg-layers {
+	    border-bottom: 4px solid darken($brand-quinary-tmh, 15%);
+	}
+
+	&:hover {
+		.atvImg-layers .atvImg-rendered-layer.is-bg {
+		    background-color: lighten(saturate($brand-quinary-tmh, 15%), 5%);
+		}
+	}
+}
+//=========================================
+// UP TO SNUFF
+//=========================================
+
+.btn-up-2-snuff {
+
+	// MOBILE FALLBACK - img removed by JS
+	img {
+		@include media-breakpoint-down(sm) {
+		    background-color: $brand-septenary-tmh;
+		    border-bottom: 4px solid #836150;
+		}
+	}
+
+	.atvImg-layers .atvImg-rendered-layer.is-bg {
+	    background-color: $brand-septenary-tmh;
+	}
+
+	.atvImg-layers {
+	    border-bottom: 4px solid #836150; //darken($brand-septenary-tmh, 15%);
+	}
+}
+//=========================================
+// EVIL READ
+//=========================================
+
+.btn-evil-read {
+	// MOBILE FALLBACK - img removed by JS
+	img {
+		@include media-breakpoint-down(sm) {
+		    background-color: $brand-octonary-tmh;
+		    border-bottom: 4px solid #484848;
+		}
+	}
+
+	.atvImg-layers .atvImg-rendered-layer.is-bg {
+	    background-color: $brand-octonary-tmh;
+	}
+
+	.atvImg-layers {
+	    border-bottom: 4px solid #484848; //darken($brand-octonary-tmh, 15%);
+	}
+}
+
+//--------------------------------------------------------------------
+// FALLBACKS
+//--------------------------------------------------------------------
+
+// NO JS FALLBACK -------------------------
+.no-js .btn-movie-night img {
+	background-color: $brand-secondary-tmh;
+	border-bottom: 4px solid darken($brand-secondary-tmh, 15%);
+}
+
+// NO JS FALLBACK -------------------------
+.no-js .btn-journey-into-childhood img {
+	background-color: $brand-tertiary-tmh;
+	border-bottom: 4px solid darken($brand-tertiary-tmh, 15%);
+}
+
+// NO JS FALLBACK -------------------------
+.no-js .btn-midnight-games img {
+	background-color: $brand-quaternary-tmh;
+	border-bottom: 4px solid darken($brand-quaternary-tmh, 15%);
+}
+
+// NO JS FALLBACK -------------------------
+.no-js .btn-the-vault-of-filler img {
+	background-color: $brand-quinary-tmh;
+	border-bottom: 4px solid darken($brand-quinary-tmh, 15%);
+}
+
+// NO JS FALLBACK -------------------------
+.no-js .btn-up-2-snuff img {
+	background-color: $brand-septenary-tmh;
+	border-bottom: 4px solid #836150;
+}
+
+// NO JS FALLBACK -------------------------
+.no-js .btn-evil-read img {
+	background-color: $brand-octonary-tmh;
+	border-bottom: 4px solid #484848;
+}

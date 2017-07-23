@@ -1,0 +1,126 @@
+/*
+    COUCH-MAN.CSS
+
+    - Last updated: 23.07.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+.couch-man {
+
+    //=========================================
+    // IMG CONTAINER
+    //=========================================
+
+    .img {
+        display: inline-block;
+        position: relative;
+        font-size: rem-calc(12);
+
+        @include media-breakpoint-up(sm) {
+            font-size: rem-calc(16);
+        }
+
+        //=========================================
+        // IMG
+        //=========================================
+
+        img {
+            width: em-calc(400);
+        }
+
+        //=========================================
+        // SPIDERS
+        //=========================================
+
+        .couch-man-spider-1,
+        .couch-man-spider-2 {
+            position: absolute;
+            top: em-calc(26);
+            left: em-calc(240);
+            width: em-calc(80);
+            height: em-calc(80);
+            background: url(/assets/img/layout/spider-2b@2x.gif) no-repeat;
+            background-size: contain;
+            // border: 1px solid red;
+        }
+
+        .couch-man-spider-2 {
+            top: em-calc(41.8);
+            left: em-calc(14);
+            width: em-calc(70);
+            height: em-calc(70);
+            background: url(/assets/img/layout/spider-1a@2x.gif) no-repeat;
+            background-size: contain;
+        }
+
+        //=========================================
+        // MOBILE
+        //=========================================
+
+        .couch-man-mobile {
+            position: absolute;
+            bottom: em-calc(5);
+            left: em-calc(160);
+            width: em-calc(12);
+            height: em-calc(20);
+            background: #8dadbb;
+            z-index: -1;
+            transform: skew(26deg);
+        }
+
+        //=========================================
+        // BLOOD POOL
+        //=========================================
+
+        .couch-man-blood-pool {
+            position: absolute;
+            bottom: 0;
+            left: em-calc(15);
+            width: em-calc(64);
+            height: em-calc(12);
+            background: url(/assets/img/layout/couch-man-blood-pool.svg) no-repeat;
+            background-size: contain;
+            z-index: -3;
+
+            @include media-breakpoint-up(md) {
+                left: em-calc(23);
+                bottom: em-calc(5);
+            }
+        }
+
+        //=========================================
+        // WATER RIPPLE
+        //=========================================
+
+        .couch-man-blood-pool-ripple {
+            position: absolute;
+            left: em-calc(50);
+            bottom: em-calc(14.5);
+            opacity: 0.3;
+        }
+
+        .couch-man-blood-pool-ripple:before,
+        .couch-man-blood-pool-ripple:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: em-calc(14);
+            height: em-calc(4);
+            // background: rgba(white, 0.1);
+            border: 1px solid white;
+            border-radius: 100%;
+            transform: scale(0);
+        }
+    }
+}
+
+//=========================================
+//
+//=========================================

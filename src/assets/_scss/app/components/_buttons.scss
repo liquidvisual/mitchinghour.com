@@ -1,0 +1,65 @@
+/*
+    BUTTONS.CSS
+
+    - Last updated: 02.11.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//--------------------------------------------------------------------
+// ALL BUTTONS
+//--------------------------------------------------------------------
+
+.btn {
+	padding-bottom: rem-calc(6);
+	border: 0;
+	border-bottom: 3px solid darken($brand-btn, 10%); // 3px slightly less than big tiles
+	background: $brand-btn;
+	font-family: 'Avenir Next Condensed';
+	font-size: rem-calc(22);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: white;
+	transition: transform ease 300ms, background ease 300ms;
+
+	&:hover {
+		background: lighten($brand-btn, 5%);
+		color: white;
+
+		@include media-breakpoint-up(xl) {
+		    transform: scale(1.1);
+		}
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+		border-color: transparent;
+	}
+}
+
+//--------------------------------------------------------------------
+// SUBSCRIBE
+//--------------------------------------------------------------------
+
+.btn-subscribe {
+	@include media-breakpoint-down(sm) {
+	    font-size: rem-calc(26) !important;
+	}
+
+	i {
+		position: relative;
+		top: 2px;
+		margin-right: 5px;
+		font-size: rem-calc(25);
+		line-height: 0;
+	}
+}
+
+//--------------------------------------------------------------------
+//
+//--------------------------------------------------------------------
+//=========================================
+//
+//=========================================

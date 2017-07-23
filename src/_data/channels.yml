@@ -1,0 +1,41 @@
+# CHANNELS
+
+- title: Movie Night
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/movie-night@2x.png
+  class: btn-movie-night
+
+- title: Journey Into Childhood
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/journey-into-childhood@2x.png
+  class: btn-journey-into-childhood
+
+- title: Midnight Games
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/midnight-games@2x.png
+  class: btn-midnight-games
+
+- title: The Vault of Filler
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/the-vault-of-filler@2x.png
+  class: btn-the-vault-of-filler
+
+- title: Up 2 Snuff
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/up-2-snuff@2x.png
+  class: btn-up-2-snuff
+
+- title: Evil Read
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/evil-read@2x.png
+  class: btn-evil-read
+
+- title: Tales from the Couch
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/tales-from-the-couch@2x.png
+  class: btn-tales-from-the-couch
+
+- title: Time to Go Postal
+  url: '#'
+  image: /assets/img/layout/thumbs-TMH/time-to-go-postal@2x.png
+  class: btn-time-to-go-postal
