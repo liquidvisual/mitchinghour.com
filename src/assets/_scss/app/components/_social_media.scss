@@ -80,18 +80,9 @@
 .social-media {
 	display: inline-flex;
 	list-style: none;
-	position: absolute;
-	top: 60px;
-	right: 95px;
-	width: 139px;
-	height: 236px;
 	padding: 0; // [RESET]
 	margin: 0; // [RESET]
 	overflow: hidden !important; // override off-canvas
-
-	@include media-breakpoint-up(lg) {
-	    right: 10px;
-	}
 
 	li {
 		padding: 0;
@@ -110,8 +101,13 @@
 // CONTEXT
 //-----------------------------------------------------------------
 
-.global-header .social-media {
+.global-header-body .social-media {
 	display: none;
+	position: absolute;
+	top: rem-calc(60);
+	right: rem-calc(10);
+	width: 139px;
+	height: 236px;
 	overflow: visible !important;
 
 	@include media-breakpoint-up(md) {
@@ -158,22 +154,11 @@
 		left: 55px;
 		transform: rotate(-16deg);
 		z-index: 1;
-	}
 
-	.twitter {
-		top: 60px;
-		left: 30px;
-		font-size: rem-calc(45);
-		transform: rotate(-10deg);
-	}
-}
-//=========================================
-// FACEBOOK DRIP
-//=========================================
+		//=========================================
+		// FACEBOOK DRIP
+		//=========================================
 
-.social-media {
-
-	.facebook {
 		&:after {
 			content: "";
 			position: absolute;
@@ -188,4 +173,14 @@
 			z-index: -1;
 		}
 	}
+
+	.twitter {
+		top: 60px;
+		left: 30px;
+		font-size: rem-calc(45);
+		transform: rotate(-10deg);
+	}
 }
+//=========================================
+//
+//=========================================

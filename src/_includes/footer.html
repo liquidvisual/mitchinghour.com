@@ -1,4 +1,50 @@
 {% assign settings = site.data.settings %}
+{% assign sitemap = site.data.sitemap %}
+{% assign channels = site.data.channels | sort: 'title' %}
+
+<!-- FOOTER BODY -->
+<section class="global-footer-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-4">
+						<h4>Quick Links</h4>
+						<ul class="list-unstyled">
+							{% for item in sitemap offset: 1 %}
+							<li><a href="">{{ item.title }}</a></li>
+							{% endfor %}
+							<li><a href="">Advertising Enquiries</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h4>Show Regulars</h4>
+						<ul class="list-unstyled">
+							{% for item in channels %}
+							<li><a href="">{{ item.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h4>Sites</h4>
+						<ul class="list-unstyled">
+							<li><a href="">Another Nerdy Podcast</a></li>
+							<li><a href="">Blarg! Zine</a></li>
+							<li><a href="">Dan and Mitch</a></li>
+							<li><a href="">Kleptobreaker</a></li>
+							<li><a href="">liquidvisual</a></li>
+							<li><a href="">Soberfish</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4>Reach Out</h4>
+				{% include snippets/social_media.html %}
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- FOOTER BOTTOM -->
 <section class="global-footer-bottom">
@@ -13,10 +59,10 @@
 			<div class="col-6 text-right">
 				<small>
 					<a class="author-logo" target="_blank" href="{{ settings.author.url }}">
-				    	<span class="text">{{ settings.author.description }}</span>&nbsp;&nbsp;
-				    	<img width="20" height="20" src="{{ settings.author.logo }}" alt="Site by {{ settings.author.title }}">
+						<img width="20" height="20" src="{{ settings.author.logo }}" alt="Site by {{ settings.author.title }}">&nbsp;&nbsp;
+				    	<span class="text">{{ settings.author.description }}</span>
 					</a>
-					<a href="/docs/">Docs</a>
+					<!-- <a href="/docs/">Docs</a> -->
 				</small>
 			</div>
 		</div>

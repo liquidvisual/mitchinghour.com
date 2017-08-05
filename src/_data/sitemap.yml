@@ -1,15 +1,48 @@
 - title: Home
   url: /
 
-- title: Scroll Down
-  url: '#home'
+- title: About
+  url: /about/
 
-- title: Case Studies
-  url: /404/
+- title: Photos
+  url: /photos/
+
+- title: Episodes
+  url: /episodes/
+
+- title: Segments
+  url: /videos/
+
+- title: Cast of Characters
+  url: /cast-of-characters/
   include_children_in_nav: true
   children:
-    - title: Item
-      url: /404/
+    - title: Mitch
+      url: /cast-of-characters/mitch/
 
-- title: 404
-  url: /404/
+    - title: The Blurry Man
+      url: /cast-of-characters/
+
+    - title: Dan
+      url: /cast-of-characters/
+
+    - title: Corey
+      url: /cast-of-characters/
+
+    - title: Randall
+      url: /cast-of-characters/
+
+    - title: Janice Hawthorne
+      url: /cast-of-characters/
+
+    - title: Steve Kitman
+      url: /cast-of-characters/
+
+    - title: Terry
+      url: /cast-of-characters/
+
+- title: Store
+  url: /store/
+
+- title: Mail Time
+  url: /mail-time/

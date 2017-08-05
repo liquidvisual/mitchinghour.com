@@ -10,13 +10,32 @@
 //-----------------------------------------------------------------
 // FOOTER
 //-----------------------------------------------------------------
+
+.global-footer-body {
+	padding: $spacer*2 0;
+
+	background: rgba(black, 0.4);
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: rem-calc(18);
+		font-weight: normal;
+		text-transform: uppercase;
+		margin-bottom: $spacer;
+	}
+
+	ul {
+		font-size: rem-calc(16);
+		font-weight: 500;
+	}
+}
+
 //-----------------------------------------------------------------
 // FOOTER BOTTOM
 //-----------------------------------------------------------------
 
 .global-footer-bottom {
 	padding: $spacer/2 0;
-	background: #3d3d3d;
+	background: black; //rgba(black, 0.4);
 	color: white;
 
 	a {

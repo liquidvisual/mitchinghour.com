@@ -4,11 +4,14 @@ layout: base
 
 {% include hero_secondary.html %}
 
-{% include snippets/breadcrumb.html %}
+{% if page.breadcrumbs %}
+	{% include snippets/breadcrumb.html %}
+{% endif %}
 
 <!-- CONTENT -->
 <main class="content">
 
+	<!-- BODY -->
     <section class="section">
         <div class="container">
             {{ content }}
