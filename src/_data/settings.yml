@@ -9,7 +9,7 @@ company: liquidvisual
 description: The Mitching Hour is a horror themed YouTube channel that covers movies, games, comics and popular culture.
 
 # SITE DEFAULTS
-site_tagline: "<span class='font-weight-normal'>starting</span> HALLOWEEN"
+site_tagline: "<span class='font-weight-normal'>Coming</span> Soon-ish"
 site_tagline_final: "THURSDAYS <span class='font-normal'>at</span> MIDNIGHT"
 
 # DEVELOPER
@@ -28,7 +28,7 @@ offices:
 
 # SOCIAL MEDIA
 facebook:
-instagram:
+instagram: https://www.instagram.com/themitchinghour/
 youtube: https://www.youtube.com/channel/UCyhc20wvZZ_ODC-EzSErDjg
 youtube_subscribe: https://www.youtube.com/channel/UCyhc20wvZZ_ODC-EzSErDjg
 
