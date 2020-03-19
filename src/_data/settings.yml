@@ -1,12 +1,12 @@
 # GLOBAL SITE SETTINGS
 
-cname: www.mitchinghour.com
+cname: www.themitchinghour.com
 
 # META
 title: The Mitching Hour
-title_homepage: The Mitching Hour - A Ghoulish New YouTube Show
-company: liquidvisual
-description: The Mitching Hour is a horror themed YouTube channel that covers movies, games, comics and popular culture.
+title_homepage: The Mitching Hour - A Ghoulish Twitch Show
+company:
+description: The Mitching Hour is a horror themed Twitch channel that covers movies, games, comics and popular culture.
 
 # SITE DEFAULTS
 site_tagline: "<span class='font-weight-normal'>Coming</span> Soon-ish"
