@@ -14,7 +14,7 @@
 .btn {
 	padding-bottom: rem-calc(6);
 	border: 0;
-	border-bottom: 3px solid darken($brand-btn, 10%); // 3px slightly less than big tiles
+	border-bottom: 3px solid darken($brand-btn, 50%); // 3px slightly less than big tiles
 	background: $brand-btn;
 	font-family: 'Avenir Next Condensed';
 	font-size: rem-calc(22);
